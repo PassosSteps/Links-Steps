@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(bgd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.crt-effect {
+    /* Simulação de efeito CRT para o conteúdo */
+    background: 
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.02));
+    background-size: 100% 2px, 3px 100%;
+    filter: contrast(1.2) brightness(1.2);
+    animation: crt-flicker 1s infinite alternate;
+}
+
+@keyframes crt-flicker {
+  from {
+    filter: contrast(1) brightness(1);
+  }
+  to {
+    filter: contrast(1.2) brightness(1.2);
+  }
+}
+
+/* Se você desejar uma sombra suave ao redor do texto para simular o brilho do CRT */
+h1, ul li a {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    color: greenyellow;
+    font-size: 50px;
+    font-family: "VT323", monospace;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 167, 0);
+    font-family: "VT323", monospace;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+ul li{
+    margin: 30px;
+}
+
+ul{
+    margin-left: 75px;
+}
+
+#of{
+    color: black;
+    text-decoration: none;
+    font-family: "VT323", monospace;
+    font-size: 50px;
+}
+
+#of:hover{
+    color: rgb(88, 88, 88);
+}
+
+#segredo{
+    margin-top: 320px;
+}
