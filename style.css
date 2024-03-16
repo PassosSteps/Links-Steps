@@ -1,9 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(bgd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
 }
 
 .crt-effect {
